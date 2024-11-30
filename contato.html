@@ -12,11 +12,17 @@
               font-family: Arial, sans-serif;
           }
           .menu {
-              background-color: #333;
-              overflow: hidden;
-              display: flex;
-              justify-content: space-between;
-          }
+            position: fixed; /* Fixa no topo */
+            top: 0; /* Alinha no topo */
+            left: 0;
+            width: 100%; /* Faz com que o menu ocupe toda a largura da página */
+            z-index: 1000; /* Certifique-se de que o menu fique acima de outros elementos */
+            background-color: #333; /* Cor de fundo */
+            color: white; /* Cor do texto */
+            display: flex; /* Facilita o alinhamento dos itens */
+            justify-content: space-around; /* Espaçamento igual entre os itens */
+            padding: 10px 0;
+           }
           .menu a {
               color: white;
               padding: 14px 20px;
